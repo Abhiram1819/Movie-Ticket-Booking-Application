@@ -1,0 +1,239 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>cara</title><link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="{% static 'img/logo.png' %}" class="logo" alt="logo"></a>
+        <div>
+            <ul id="navbar"> 
+                <!--<li><a href="searchbar.html">search</a></li>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="shop/html">Admin</a></li>
+                <li><a href="blog.html">signup</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>-->
+                <li><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+            </ul>
+            <form
+             action="" class="search">
+                <input type="text" placeholder="Search">
+                <button>Search</button>
+            </form>
+        </div>
+    </section>
+    <section id="hero">
+        <!--<h4>Trade-in-offer</h4>
+        <h2>Super Value deals</h2>
+        <h1>On all products</h1>
+        <p>Save more with coupons & upto 70% off!</p>
+        <button>Shop now</button>-->
+        
+    </section>
+    <section id="feature" class="section-p1"> 
+        <div class="fe-box">
+            <img src="{% static 'img/popcorn.jpg' %}" alt="">
+            
+        </div>
+        <div class="fe-box">
+            <img src="{% static 'img/samosa.webp' %}" alt="">
+        
+        </div>
+        <div class="fe-box">
+            <img src="{% static 'img/drinks.jpg' %}" alt="">
+            
+        </div>
+        <div class="fe-box">
+            <img src="{% static 'img/lays.jpg' %}" alt="">
+            
+        </div>
+        
+    </section>
+    <section id="product1" class="section-p1">
+        <h2>Feature Films</h2>
+       
+        <div class="pro-container">
+            <div class="pro">
+                <img src="{% static 'img/vikram.jpg' %}" alt="">
+                <div class="des">
+                    <span>action thriller</span>
+                    <h5>Vikram</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>Tel Tam</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart " cart></i></a>
+            </div>
+            <div class="pro">
+                <img src="{% static 'img/pushpa.jpg' %}" alt="">
+                <div class="des">
+                    <span>action,drama</span>
+                    <h5>Pushpa</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        
+                    </div>
+                    <h4>Tel Tam Hin</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+            </div>
+            <div class="pro">
+                <img src="{% static 'img/KGF-2.jpg' %}" alt="">
+                <div class="des">
+                    <span>action,drama</span>
+                    <h5>KGF-2</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        
+                    </div>
+                    <h4>Tel Tam Hin</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart" cart></i></a>
+            </div>
+            <div class="pro">
+                <img src="{% static 'img/jurassic-world-dominion.webp' %}" alt="">
+                <div class="des">
+                    <span>action thriller</span>
+                    <h5>Jurassic World Dominion</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        
+                    </div>
+                    <h4>English Tamil Telugu</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart" cart></i></a>
+            </div>
+            <div class="pro">
+                <img src="{% static 'img/beast.webp' %}" alt="">
+                <div class="des">
+                    <span>action</span>
+                    <h5>Beast</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        
+                    </div>
+                    <h4>Tel Tam</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart" cart></i></a>
+            </div>
+            <div class="pro">
+                <img src="{% static 'img/DOCSTRANGE.jpg' %} " alt="">
+                <div class="des">
+                    <span>action</span>
+                    <h5>Doctor Strange in Multiverse of Madness</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        
+                    </div>
+                    <h4>Eng Tam Tel</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart" cart></i></a>
+            </div>
+            <div class="pro">
+                <img src="{% static 'img/avatar2.jpg' %}" alt="">
+                <div class="des">
+                    <span>sci-fi thriller</span>
+                    <h5>Avatar-The way of water</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        
+                    </div>
+                    <h4>Eng</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart" cart></i></a>
+            </div>
+            <div class="pro">
+                <img src="{% static 'img/spiderman.jpg' %}" alt="">
+                <div class="des">
+                    <span>sci-fi action</span>
+                    <h5>Spiderman No way Home</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>Eng Tel Tam</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart" cart></i></a>
+            </div>
+
+        </div>
+    </section>
+    <section id="banner" class="section-m1">
+        <h4></h4>
+        <h2>up to <span>30% off using payTM </span></h2>
+        <button class="normal">Explore Movies</button>
+    </section>
+    
+    <footer class="section-p1">
+        <div class="follow">
+            <h4>Follow us</h4>
+            <div class="icon">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-pinterest-p"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About us</a>
+            
+            <a href="#">Primary Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact us</a>
+        </div>
+        <div class="col">
+            <h4>My account</h4>
+            <a href="logout">log out</a>
+            <a href="#">Help</a>
+        </div>
+        <div class="col install">
+            <h4>Install app</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="{% static 'img/pay/app.jpg' %}" alt="">
+                <img src="{% static 'img/pay/play.jpg' %}" alt="">
+
+            </div>
+            <p>Secured Payment Gateway</p>
+            <img src="{% static 'img/pay/pay.png' %}" alt="">
+        </div>
+        <div class="copyright">
+            <p>2021, cara-HTML CSS Ecommerce Template</p>
+        </div>
+    </footer>
+</body>
+</html>

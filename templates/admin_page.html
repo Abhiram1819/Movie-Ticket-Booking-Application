@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Admin Login</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="login-box">
+      <h1>Admin</h1>
+      <form>
+        <label>Add movie</label>
+        <input type="email" placeholder="" />
+        <label>Add theatres</label>
+        <input type="password" placeholder="" />
+        <input class="form-submit" type="button" value="Add" />
+      </form>
+    </div>
+    <div style="margin-top: 50px; margin-left:48%;">
+      <a href="admin_login">Log out</a>
+    </div>
+  </body>
+</html>
+

@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Login | By Code Info</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="login-box">
+      <h1>Login</h1>
+      <form action="login" method="post">
+        {% csrf_token %} 
+        <label>Username</label>
+        <input type="text" name="Username" placeholder=" Enter Username" />
+        <label>Password</label>
+        <input type="password" name="Password" placeholder="Enter Password" />
+        <input class="form-submit" type="Submit" />
+      </form>
+    </div>
+    <p class="para-2">
+      Not have an account? <a href="register">Sign Up Here</a>
+    </p>
+    <p class="para-2">
+        Not have an account? <a href="admin_login">Admin login Here</a>
+      </p>
+  </body>
+</html>
+
